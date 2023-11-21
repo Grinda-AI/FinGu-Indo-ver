@@ -1,0 +1,9 @@
+name: fingu-web-prototype-alpha
+services:
+  fingu-web-prototype-client-alpha:
+    image: fingu-web-prototype-client-alpha
+    build:
+      context: .
+      dockerfile: Dockerfile.alpha
+    ports:
+      - "3000:3000"
